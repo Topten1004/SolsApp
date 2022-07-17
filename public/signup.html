@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Sign up Page</title>
+</head>
+<style>
+    .c-header__menu__nav--items.menu{
+        width: 100% !important;
+    }
+    .c-header__menu__nav--item_new{
+        padding:20px 0px !important;
+    }
+    .c-header__menu__nav--item_new div{
+        width: max-content;
+        margin: 0 auto;
+    }
+    .c-header__menu__nav--item_new div > p{
+        margin-bottom: 0px;
+        color:#747474;
+        width: max-content;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .c-header__menu__nav--item_new div a{
+        color: #414d64;
+        font-weight: bold;
+    }
+    .c-header__menu__nav--item_new::before{
+        content:none !important;
+    }
+</style>
+<body>
+    <header class="c-header">
+        <div class="c-header__main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="c-header__main__inner">
+                            <button class="menu-toggle js-toggle">
+                                <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="3" width="24" height="2" rx="1" fill="#000"></rect>
+                                    <rect y="11" width="24" height="2" rx="1" fill="#000"></rect>
+                                    <rect y="19" width="24" height="2" rx="1" fill="#000"></rect>
+                                </svg>
+                            </button>
+
+                            <nav class="c-header__menu">
+                                <ul class="c-header__menu__nav--items menu">
+                                    <!-- <li class="c-header__menu__nav--item">
+                                        <a href="index.html" class="c-header__menu__nav--link">Home</a>
+                                    </li>
+                                    <li class="c-header__menu__nav--item">
+                                        <a href="#" class="c-header__menu__nav--link">About</a>
+                                    </li>
+                                    <li class="c-header__menu__nav--item">
+                                        <a href="#" class="c-header__menu__nav--link">Services</a>
+                                    </li>
+                                    <li class="c-header__menu__nav--item">
+                                        <a href="#" class="c-header__menu__nav--link">Contact Us</a>
+                                    </li> -->
+                                    <li class="c-header__menu__nav--item_new">
+                                        <div>
+                                            <p>- Contact US-</p>
+                                            <a></a>
+                                        </div>
+                                    </li>
+                                    <li class="c-header__menu__nav--item_new">
+                                        <div>
+                                            <p>- email us -</p>
+                                            <a href="mailto:xyz@gmail.com" target="blank">admin@solsapp.com</a>
+                                        </div>
+                                    </li>
+                                    <li class="c-header__menu__nav--item_new">
+                                        <div>
+                                            <p>Linkedin</p>
+                                            <p>Follow us <a href="https://www.linkedin.com/company/solstice-tech" target="blank">@SOLS</a></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="c-header__main__inner__login-info">
+                              <!--
+                                <a href="#" class="already-account">Already have an account?</a>
+                                <a href="login.html" class="btn btn-primary">Login</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="c-header__main__logo">
+                            <a class="c-header__main__logo__link" href="index.html">
+                                <img src="images/logo.png" class="img-fluid">
+                                <p>Join SOLS today</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-section">
+            <div class="row">
+                <div class="col-lg-6 main-section__img order-1 order-lg-0">
+                    <img src="http://solsapp.com/images/pic1.png" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <div class="main-section__form-main">
+                        <h3 class="main-section__title">Join us here <div class="ml-2">👇</span></h3>
+                        <form class="main-section__form-main__form" method="post" action="#" id="registrationform" >
+                            <div class="form-group">
+                                <input id="fullname" name="fullname" type="text" autocomplete="off" required>
+                                <label for="fullname">Full Name</label>
+                            </div>
+
+                            <div class="form-group group-input instagram-field">
+                                <div class="input-group-append">
+                                    <span id="basic-addon1"><i class="fa fa-instagram"></i>
+                                        <span class="symbol">@</span>
+                                    </span>
+                                </div>
+                                <input id="instagramURL" name="instagramURL" type="text" autocomplete="off">
+                                <label for="instagramURL">Instagram URL</label>
+                            </div>
+
+                            <div class="form-group group-input">
+                                <div class="input-group-append">
+                                    <span id="basic-addon2"><i class="fa fa-envelope"></i></span>
+                                </div>
+                                <input id="email" name="email" type="email" autocomplete="off" required>
+                                <label for="email">Email</label>
+                            </div>
+
+                            <div class="form-group group-input">
+                                <div class="input-group-append">
+                                    <span id="basic-addon3"><i class="fa fa-phone"></i></span>
+                                </div>
+                                <input id="phoneToText" name="phoneToText" type="text" autocomplete="off">
+                                <label for="phoneToText">Phone to Text</label>
+                            </div>
+
+                            <div class="form-group group-input">
+                                <div class="input-group-append">
+                                    <span id="basic-addon3"><i class="fa fa-link"></i></span>
+                                </div>
+                                <input id="website_url" name="website_url" type="text" autocomplete="off">
+                                <label for="website_url">Website URL</label>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle form-control" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="text">Account Type</span>
+                                        <span class="selected">Individual</span>
+                                        <span class="arrow"><svg height="20" width="20" viewBox="0 0 20 20"
+                                                aria-hidden="true" focusable="false" class="css-19bqh2r">
+                                                <path
+                                                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z">
+                                                </path>
+                                            </svg></span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li class="dropdown-item">Individual</li>
+                                        <li class="dropdown-item">Business</li>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="form-group upload-file">
+                                <label for="uploadLogo">Upload your Logo</label>
+                                <input id="uploadLogo" name="uploadLogo" type="file">
+                            </div> -->
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-block btn-primary" id="registerbtn">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- for total count -->
+        <div class="creators-section">
+            <div class="row" style="text-align: center;">
+                <div class="col-sm-12">
+                    <h3 class="creators-section__title">Waitlisted users</h3>
+                    <span class="creators-section__title" id="countspan">1001</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="creators-section">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="creators-section__title">Creators on solstice</h3>
+
+                    <div class="creators-section__list">
+                        <a class="creators-section__list__item" href="#" target="blank">
+                            <div class="creators-section__list__item__img">
+                                <img alt="" aria-hidden="true"
+                                    src="https://hoo.be/_next/image?url=https%3A%2F%2Fimages.hoo.be%2F7ed51bce-f10e-436e-a43f-48ab1109cacb.jpg%3Fv%3D1626111140417&w=128&q=75">
+                            </div>
+                            <h6 class="creators-section__list__item__title">Lindsey Vonn</h6>
+                            <p class="creators-section__list__item__tags">#Businessperson / Olympic Athlete</p>
+                        </a>
+                        <a class="creators-section__list__item" href="#" target="blank">
+                            <div class="creators-section__list__item__img">
+                                <img alt="" aria-hidden="true"
+                                    src="https://hoo.be/_next/image?url=https%3A%2F%2Fimages.hoo.be%2F78bcdc36-88a5-4d4b-9ca3-039fbf6a4738.jpg%3Fv%3D1626699446777&w=128&q=75">
+                            </div>
+                            <h6 class="creators-section__list__item__title">Dan Argueta</h6>
+                            <p class="creators-section__list__item__tags">UFC Fighter</p>
+                        </a>
+                        <a class="creators-section__list__item" href="#" target="blank">
+                            <div class="creators-section__list__item__img">
+                                <img alt="" aria-hidden="true"
+                                    src="https://hoo.be/_next/image?url=https%3A%2F%2Fimages.hoo.be%2Fa8f7acfa-f74d-416f-8476-c0b26eae8cf1.jpg%3Fv%3D1619743473027&w=128&q=75">
+                            </div>
+                            <h6 class="creators-section__list__item__title">Olive Yew</h6>
+                            <p class="creators-section__list__item__tags">The anatomy of pain guy on Insta</p>
+                        </a>
+                        <a class="creators-section__list__item" href="#" target="blank">
+                            <div class="creators-section__list__item__img">
+                                <img alt="" aria-hidden="true"
+                                    src="https://hoo.be/_next/image?url=https%3A%2F%2Fimages.hoo.be%2Fe944f5a4-8522-4c70-9adf-6bda66a2e093.jpg%3Fv%3D1619210036053&w=128&q=75">
+                            </div>
+                            <h6 class="creators-section__list__item__title">Anna Logwatch</h6>
+                            <p class="creators-section__list__item__tags">Personal Trainer</p>
+                        </a>
+
+                        <a class="creators-section__list__item" href="#" target="blank">
+                            <div class="creators-section__list__item__img">
+                                <img alt="" aria-hidden="true"
+                                    src="https://hoo.be/_next/image?url=https%3A%2F%2Fimages.hoo.be%2F188d256b-2747-49f6-aa2d-7b64862c865b.jpg%3Fv%3D1613800212010&w=128&q=75">
+                            </div>
+                            <h6 class="creators-section__list__item__title">Mustafa Leek</h6>
+                            <p class="creators-section__list__item__tags">#Wellness / Yoga Instructor</p>
+                        </a>
+
+                        <a class="creators-section__list__item" href="#" target="blank">
+                            <div class="creators-section__list__item__img">
+                                <img alt="" aria-hidden="true"
+                                    src="https://hoo.be/_next/image?url=https%3A%2F%2Fimages.hoo.be%2Fff8d9007-c18f-4ba8-9af9-8786cbab7cf7.jpg%3Fv%3D1640019562048&w=128&q=75">
+                            </div>
+                            <h6 class="creators-section__list__item__title">Col Fays</h6>
+                            <p class="creators-section__list__item__tags">#Wellness / Yoga Instructor</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--
+        <div class="why-section">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="why-section__title">Why solstice</h3>
+                    <div class="why-section__main js-why-section">
+                        <div class="why-section__main__item">
+                            <p class="why-section__main__item__img"></p>
+                            <h6 class="why-section__main__item__title">Embrace Movement Like Never Before</h6>
+                            <p class="why-section__main__item__tags">The Solstice platform empowers users to connect, teach, inspire, and grow stronger together</p>
+                        </div>
+                        <div class="why-section__main__item">
+                            <p class="why-section__main__item__img"></p>
+                            <h6 class="why-section__main__item__title">Personalized Insights</h6>
+                            <p class="why-section__main__item__tags">SOLS aggregates content from leaders in the wellness industry to curate a rich, personalized wellness experience for every user</p>
+                        </div>
+                        <div class="why-section__main__item">
+                            <p class="why-section__main__item__img"></p>
+                            <h6 class="why-section__main__item__title">Stitch Together Routines</h6>
+                            <p class="why-section__main__item__tags">Users can piece together routines from different content creators on the platform, much like creating a playlist from one’s favorite artists.</p>
+                        </div>
+                        <div class="why-section__main__item">
+                            <p class="why-section__main__item__img"></p>
+                            <h6 class="why-section__main__item__title">Interface Designed Specifically for Routine Building</h6>
+                            <p class="why-section__main__item__tags">SOLS streamlines the process of synthesizing,and implementing the vast amount of wellness content into organized routines</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+        <footer class="footer-section">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="c-header__main__logo">
+                        <a class="c-header__main__logo__link" href="index.html">
+                            <img src="images/logo.png" class="img-fluid">
+                            <p>explore solstice</p>
+                        </a>
+                    </div>
+
+                    <ul class="footer-section__social list-unstyled">
+                        <li>
+                            <a href="#" class="footer-section__social__links">
+                                <svg class="" width="24px" height="24px" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.6066 10.3412V15.1952C16.6066 18.4195 14.6454 22 9.80057 22C6.06483 21.9839 3 18.9706 3 15.3145C3 15.2579 3.00078 15.2013 3.00234 15.1402C3.11169 11.6117 6.10778 8.76808 9.71466 8.76808C10.0482 8.76808 10.3817 8.79254 10.7121 8.8407C11.1252 8.90185 11.4314 9.24966 11.4314 9.65861V12.8095C11.4314 13.0663 11.3096 13.3079 11.1018 13.4646C10.894 13.6213 10.6246 13.6741 10.3707 13.6091C10.2083 13.567 10.0404 13.5456 9.87165 13.5456C8.82739 13.5456 7.95808 14.3628 7.91591 15.384L7.91122 15.5094C7.91122 16.4152 8.67274 17.1613 9.59828 17.1613L9.9724 17.1621C10.8933 17.1621 11.6509 16.4206 11.6509 15.5186L11.6423 15.3145V2.82709C11.6423 2.37074 12.0211 2 12.4874 2H15.6717C16.0864 2 16.4403 2.29506 16.5059 2.69561C16.7347 4.08989 17.169 4.96514 17.8204 5.51246C18.4772 6.06436 19.327 6.27687 20.2885 6.42746C20.6985 6.49167 21 6.83794 21 7.24385V10.4047C21 10.6355 20.9008 10.8564 20.7274 11.0124C20.554 11.1691 20.3213 11.2478 20.0862 11.2287C18.8787 11.1316 17.7016 10.8305 16.6066 10.3412ZM14.9758 3.65418H13.3325V15.2854C13.3379 15.3626 13.3411 15.4406 13.3411 15.5186C13.3411 17.3272 11.8204 18.8155 9.9724 18.8155C9.90758 18.8155 9.84275 18.8139 9.77792 18.8094C9.71856 18.8132 9.65842 18.8147 9.59828 18.8147C7.74564 18.8147 6.22182 17.3226 6.22182 15.5094C6.22182 15.4391 6.22416 15.368 6.22728 15.3168C6.30461 13.4577 7.85499 11.9602 9.74121 11.8945V10.4223L9.71466 10.4215C7.01536 10.4215 4.77298 12.5504 4.69097 15.1868C4.69018 15.2289 4.6894 15.2717 4.6894 15.3145C4.6894 18.0664 6.99662 20.3344 9.80448 20.3458C13.4567 20.3458 14.9164 17.6276 14.9164 15.1952V8.9523C14.9164 8.65036 15.0851 8.37211 15.3562 8.22688C15.6272 8.08164 15.9568 8.0931 16.2169 8.25592C17.1627 8.84834 18.2132 9.25654 19.3098 9.45987V7.92876C18.3132 7.71319 17.4384 7.3715 16.7199 6.76762C15.9435 6.11481 15.3273 5.15242 14.9758 3.65418Z"
+                                        fill="#000"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-section__social__links">
+                                <svg class="" width="24px" height="24px" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2 6C2 4.93913 2.42143 3.92172 3.17157 3.17157C3.92172 2.42143 4.93913 2 6 2H18C19.0609 2 20.0783 2.42143 20.8284 3.17157C21.5786 3.92172 22 4.93913 22 6V18C22 19.0609 21.5786 20.0783 20.8284 20.8284C20.0783 21.5786 19.0609 22 18 22H6C4.93913 22 3.92172 21.5786 3.17157 20.8284C2.42143 20.0783 2 19.0609 2 18V6ZM6 4C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V6C20 5.46957 19.7893 4.96086 19.4142 4.58579C19.0391 4.21071 18.5304 4 18 4H6ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12ZM17.5 8C17.8978 8 18.2794 7.84196 18.5607 7.56066C18.842 7.27936 19 6.89782 19 6.5C19 6.10218 18.842 5.72064 18.5607 5.43934C18.2794 5.15804 17.8978 5 17.5 5C17.1022 5 16.7206 5.15804 16.4393 5.43934C16.158 5.72064 16 6.10218 16 6.5C16 6.89782 16.158 7.27936 16.4393 7.56066C16.7206 7.84196 17.1022 8 17.5 8Z"
+                                        fill="#000"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-section__social__links">
+                                <svg class="" width="24px" height="24px" viewBox="-1 -1 26 26"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                                        fill="#000"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/myjs.js?v=1.9"></script>
+</body>
+
+</html>
